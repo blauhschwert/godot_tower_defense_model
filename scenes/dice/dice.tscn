@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bwuvouuuu7v5g"]
+
+[ext_resource type="Texture2D" uid="uid://cbdfmduodhek6" path="res://assets/Dice.png" id="1_4fys5"]
+[ext_resource type="Script" uid="uid://v7iv5vlmab4k" path="res://scenes/dice/dice.gd" id="1_fvt51"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fvt51"]
+size = Vector2(26, 26)
+
+[node name="Dice" type="StaticBody2D" unique_id=257919387]
+scale = Vector2(5, 5)
+input_pickable = true
+script = ExtResource("1_fvt51")
+
+[node name="faces" type="Node2D" parent="." unique_id=818456448]
+
+[node name="1" type="Sprite2D" parent="faces" unique_id=1908325884]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="2" type="Sprite2D" parent="faces" unique_id=1254039854]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 32)
+
+[node name="3" type="Sprite2D" parent="faces" unique_id=1800395438]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
+
+[node name="4" type="Sprite2D" parent="faces" unique_id=1366059330]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(96, 0, 32, 32)
+
+[node name="5" type="Sprite2D" parent="faces" unique_id=2038640459]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(128, 0, 32, 32)
+
+[node name="6" type="Sprite2D" parent="faces" unique_id=854641158]
+texture_filter = 1
+texture = ExtResource("1_4fys5")
+region_enabled = true
+region_rect = Rect2(160, 0, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1848105932]
+visible = false
+shape = SubResource("RectangleShape2D_fvt51")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

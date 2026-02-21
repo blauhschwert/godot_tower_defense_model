@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c8qmravnspw6e"]
+
+[ext_resource type="Script" uid="uid://dvnclouwk3dts" path="res://scenes/tower_place/tower_place.gd" id="1_a7ce4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ro4v"]
+size = Vector2(48, 48)
+
+[node name="TowerPlace" type="Area2D" unique_id=1067287566]
+scale = Vector2(2, 2)
+script = ExtResource("1_a7ce4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=608485829]
+shape = SubResource("RectangleShape2D_0ro4v")
+
+[node name="Panel" type="Panel" parent="." unique_id=1754358065]
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 24.0
+offset_bottom = 24.0
+mouse_filter = 2
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

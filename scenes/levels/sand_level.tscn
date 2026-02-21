@@ -1,0 +1,323 @@
+[gd_scene format=4 uid="uid://dt6ahvajjsvd7"]
+
+[ext_resource type="Texture2D" uid="uid://c0c1xt2d2jtkq" path="res://assets/Topdown Tanks/PNG/Environment/dirt.png" id="1_1r5jn"]
+[ext_resource type="Texture2D" uid="uid://dl8q1dqev3wam" path="res://assets/Topdown Tanks/PNG/Environment/grass.png" id="2_idpqx"]
+[ext_resource type="Texture2D" uid="uid://djh7d2u082lfs" path="res://assets/Topdown Tanks/PNG/Environment/sand.png" id="3_axxwv"]
+[ext_resource type="Texture2D" uid="uid://bbp8gl7ncb6ua" path="res://assets/Topdown Tanks/PNG/Environment/treeLarge.png" id="4_uoy5p"]
+[ext_resource type="Texture2D" uid="uid://dlbsp5snoen1t" path="res://assets/Topdown Tanks/PNG/Environment/treeSmall.png" id="5_of3u0"]
+[ext_resource type="FontFile" uid="uid://cw22wrnae4r2q" path="res://assets/fonts/ARCADECLASSIC.TTF" id="7_axxwv"]
+[ext_resource type="PackedScene" uid="uid://c8qmravnspw6e" path="res://scenes/tower_place/tower_place.tscn" id="7_uoy5p"]
+[ext_resource type="PackedScene" uid="uid://cpnct2twmj5sb" path="res://scenes/ui/choices/choices.tscn" id="8_uoy5p"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rmjfq"]
+texture = ExtResource("1_1r5jn")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7pb6i"]
+texture = ExtResource("2_idpqx")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xfk5q"]
+texture = ExtResource("3_axxwv")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qogh7"]
+texture = ExtResource("4_uoy5p")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/next_alternative_id = 2
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8iyoh"]
+texture = ExtResource("5_of3u0")
+texture_region_size = Vector2i(87, 87)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mq31s"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_rmjfq")
+sources/1 = SubResource("TileSetAtlasSource_7pb6i")
+sources/2 = SubResource("TileSetAtlasSource_xfk5q")
+sources/3 = SubResource("TileSetAtlasSource_qogh7")
+sources/4 = SubResource("TileSetAtlasSource_8iyoh")
+
+[node name="SandLevel" type="Node2D" unique_id=2130128234]
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=909930601]
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAACAAAAAgAAAAAAAAAEAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAACAAEAAgAAAAAAAAADAAEAAgAAAAAAAAAEAAEAAQAAAAAAAAAFAAAAAQAAAAAAAAAFAAEAAQAAAAAAAAAFAAIAAQAAAAAAAAAEAAIAAQAAAAAAAAADAAIAAgAAAAAAAAACAAIAAgAAAAAAAAACAAMAAgAAAAAAAAAAAAMAAQAAAAAAAAABAAMAAQAAAAAAAAADAAMAAgAAAAAAAAAEAAMAAQAAAAAAAAAFAAMAAQAAAAAAAAAFAAQAAgAAAAAAAAAEAAQAAgAAAAAAAAADAAQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAQAAAAAAAAAAAAQAAQAAAAAAAAAGAAAAAQAAAAAAAAAHAAAAAQAAAAAAAAAIAAAAAQAAAAAAAAAIAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAIAAQAAAAAAAAAIAAIAAQAAAAAAAAAGAAIAAQAAAAAAAAAHAAMAAQAAAAAAAAAIAAMAAQAAAAAAAAAIAAQAAgAAAAAAAAAGAAQAAgAAAAAAAAAJAAAAAQAAAAAAAAAJAAEAAQAAAAAAAAAJAAIAAQAAAAAAAAAJAAMAAQAAAAAAAAAJAAQAAQAAAAAAAAAJAAUAAQAAAAAAAAAIAAUAAgAAAAAAAAAHAAUAAgAAAAAAAAAGAAUAAgAAAAAAAAAFAAUAAgAAAAAAAAAEAAUAAgAAAAAAAAADAAUAAgAAAAAAAAACAAUAAgAAAAAAAAABAAUAAQAAAAAAAAAAAAUAAQAAAAAAAAALAAAAAQAAAAAAAAAMAAAAAQAAAAAAAAANAAAAAQAAAAAAAAAOAAAAAQAAAAAAAAAPAAAAAQAAAAAAAAAKAAAAAQAAAAAAAAAKAAEAAQAAAAAAAAALAAEAAQAAAAAAAAAMAAEAAQAAAAAAAAANAAEAAQAAAAAAAAAOAAEAAQAAAAAAAAAPAAEAAQAAAAAAAAAQAAEAAQAAAAAAAAAQAAAAAQAAAAAAAAARAAAAAQAAAAAAAAASAAAAAQAAAAAAAAATAAAAAQAAAAAAAAATAAEAAQAAAAAAAAATAAIAAQAAAAAAAAATAAMAAQAAAAAAAAATAAQAAQAAAAAAAAATAAUAAQAAAAAAAAATAAYAAQAAAAAAAAATAAcAAgAAAAAAAAATAAgAAgAAAAAAAAATAAkAAQAAAAAAAAATAAoAAQAAAAAAAAASAAoAAQAAAAAAAAARAAoAAQAAAAAAAAAQAAoAAQAAAAAAAAAPAAoAAQAAAAAAAAAOAAoAAQAAAAAAAAANAAoAAQAAAAAAAAAMAAoAAQAAAAAAAAALAAoAAQAAAAAAAAAKAAoAAQAAAAAAAAAJAAoAAQAAAAAAAAAIAAoAAQAAAAAAAAAHAAoAAQAAAAAAAAAGAAoAAQAAAAAAAAAFAAoAAQAAAAAAAAAEAAoAAQAAAAAAAAADAAoAAQAAAAAAAAACAAoAAQAAAAAAAAABAAoAAQAAAAAAAAAAAAoAAQAAAAAAAAAAAAYAAgAAAAAAAAAAAAcAAgAAAAAAAAAAAAgAAQAAAAAAAAAAAAkAAQAAAAAAAAABAAkAAQAAAAAAAAABAAgAAQAAAAAAAAABAAcAAgAAAAAAAAABAAYAAgAAAAAAAAACAAYAAgAAAAAAAAACAAcAAgAAAAAAAAACAAgAAQAAAAAAAAACAAkAAQAAAAAAAAADAAkAAQAAAAAAAAADAAgAAQAAAAAAAAADAAcAAgAAAAAAAAADAAYAAgAAAAAAAAAEAAYAAQAAAAAAAAAEAAcAAQAAAAAAAAAEAAgAAQAAAAAAAAAEAAkAAQAAAAAAAAAFAAkAAQAAAAAAAAAFAAgAAQAAAAAAAAAFAAcAAQAAAAAAAAAFAAYAAQABAAAAAAAGAAYAAQABAAAAAAAGAAcAAQABAAAAAAAGAAgAAQABAAAAAAAGAAkAAQAAAAAAAAAHAAkAAQAAAAAAAAAHAAgAAgAAAAAAAAAHAAcAAgAAAAAAAAAHAAYAAgAAAAAAAAAIAAYAAgAAAAAAAAAIAAcAAgAAAAAAAAAIAAgAAgAAAAAAAAAIAAkAAQAAAAAAAAAJAAkAAQAAAAAAAAAJAAgAAgAAAAAAAAAJAAcAAgAAAAAAAAAJAAYAAQAAAAAAAAAKAAYAAQAAAAAAAAAKAAUAAQAAAAAAAAAKAAQAAQAAAAAAAAAKAAMAAQAAAAAAAAAKAAIAAQAAAAAAAAALAAIAAQAAAAAAAAALAAMAAQAAAAAAAAALAAQAAQAAAAAAAAALAAUAAQAAAAAAAAALAAYAAQAAAAAAAAALAAcAAgAAAAAAAAAKAAcAAgAAAAAAAAAKAAgAAgAAAAAAAAAKAAkAAQAAAAAAAAALAAkAAQAAAAAAAAALAAgAAgAAAAAAAAAMAAgAAgAAAAAAAAAMAAcAAgAAAAAAAAAMAAYAAQAAAAAAAAAMAAUAAQAAAAAAAAAMAAQAAQAAAAAAAAAMAAMAAQAAAAAAAAAMAAIAAQAAAAAAAAANAAIAAQAAAAAAAAANAAMAAQAAAAAAAAANAAQAAQAAAAAAAAANAAUAAQAAAAAAAAANAAYAAQAAAAAAAAANAAcAAgAAAAAAAAANAAgAAgAAAAAAAAANAAkAAQAAAAAAAAAMAAkAAQAAAAAAAAAOAAkAAQAAAAAAAAAOAAgAAgAAAAAAAAAOAAcAAgAAAAAAAAAOAAYAAQAAAAAAAAAOAAUAAQAAAAAAAAAOAAQAAQAAAAAAAAAOAAMAAQAAAAAAAAAOAAIAAQAAAAAAAAAPAAIAAQAAAAAAAAAPAAMAAQAAAAAAAAAPAAQAAQAAAAAAAAAPAAUAAQAAAAAAAAAPAAYAAQAAAAAAAAAPAAcAAgAAAAAAAAAPAAgAAgAAAAAAAAAPAAkAAQAAAAAAAAAQAAkAAQAAAAAAAAAQAAgAAgAAAAAAAAAQAAcAAgAAAAAAAAAQAAYAAQAAAAAAAAAQAAUAAQAAAAAAAAAQAAQAAQAAAAAAAAAQAAMAAQAAAAAAAAAQAAIAAQAAAAAAAAARAAIAAQAAAAAAAAARAAEAAQAAAAAAAAASAAEAAQAAAAAAAAASAAIAAQAAAAAAAAASAAMAAQAAAAAAAAARAAMAAQAAAAAAAAARAAQAAQAAAAAAAAARAAUAAQAAAAAAAAARAAYAAQAAAAAAAAARAAcAAgAAAAAAAAARAAgAAgAAAAAAAAARAAkAAQAAAAAAAAASAAkAAQAAAAAAAAASAAgAAgAAAAAAAAASAAcAAgAAAAAAAAASAAYAAQAAAAAAAAASAAUAAQAAAAAAAAASAAQAAQAAAAAAAAAGAAMAAQAAAAAAAAAAAAIAAQAAAAAAAAABAAIAAQAAAAAAAAABAAEAAQAAAAAAAAABAAAAAQAAAAAAAAADAAAAAgAAAAAAAAAHAAQAAgAAAAAAAAA=")
+tile_set = SubResource("TileSet_mq31s")
+
+[node name="Enviremount" type="TileMapLayer" parent="." unique_id=1872729128]
+tile_map_data = PackedByteArray("AAATAAAABAAAAAAAAAAPAAIABAAAAAAAAAABAAkABAAAAAAAAAASAAoABAAAAAAAAAAGAAEABAAAAAAAAAAGAAoABAAAAAAAAAA=")
+tile_set = SubResource("TileSet_mq31s")
+
+[node name="turret_place" type="Node2D" parent="." unique_id=1480739744]
+
+[node name="TowerPlace" parent="turret_place" unique_id=1067287566 instance=ExtResource("7_uoy5p")]
+position = Vector2(536, 200)
+
+[node name="TowerPlace2" parent="turret_place" unique_id=1487167571 instance=ExtResource("7_uoy5p")]
+position = Vector2(352, 448)
+
+[node name="TowerPlace3" parent="turret_place" unique_id=1332775701 instance=ExtResource("7_uoy5p")]
+position = Vector2(64, 312)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=862586698]
+position = Vector2(640, 368)
+zoom = Vector2(0.6, 0.6)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1423003878]
+
+[node name="Control" type="Control" parent="UI" unique_id=185136229]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+
+[node name="Label" type="Label" parent="UI/Control" unique_id=990133760]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.7166667, 0, 1, 1)
+theme_override_constants/shadow_outline_size = 6
+theme_override_fonts/font = ExtResource("7_axxwv")
+theme_override_font_sizes/font_size = 64
+text = "WAVE"
+
+[node name="Choices" parent="." unique_id=1733754859 instance=ExtResource("8_uoy5p")]
+offset_left = 416.0
+offset_top = 640.0
+offset_right = 816.0
+offset_bottom = 880.0
