@@ -10,15 +10,17 @@ config_version=5
 
 [application]
 
-config/name="BitSize-TowerDefense"
+config/name="BroknHorizon"
 run/main_scene="uid://c033uqfbmgvay"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://bkh0r0fe6rqas"
+config/icon="uid://dv2w7bnp1svss"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=640
+window/size/viewport_height=320
+window/size/window_width_override=1280
+window/size/window_height_override=640
 
 [input]
 

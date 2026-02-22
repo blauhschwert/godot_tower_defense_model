@@ -4,27 +4,27 @@
 [ext_resource type="Script" uid="uid://cpl0ljkgsu1jj" path="res://scenes/ui/main_menu/main_menu.gd" id="1_qt1dd"]
 [ext_resource type="Script" uid="uid://c6sw5fymstr4d" path="res://scenes/ui/main_menu/audio_control.gd" id="4_cmwxi"]
 [ext_resource type="Script" uid="uid://sk6f1xmbod1k" path="res://scenes/ui/main_menu/check_button.gd" id="5_r70wa"]
-[ext_resource type="Texture2D" uid="uid://bkh0r0fe6rqas" path="res://assets/levels/texture_base.png" id="6_8ouhi"]
+[ext_resource type="Texture2D" uid="uid://cvi0ui8k6kni2" path="res://assets/levels/moon_level_texture.png" id="6_8ouhi"]
 [ext_resource type="Script" uid="uid://dueqrekk36sqw" path="res://scenes/ui/main_menu/scale_control.gd" id="6_52x6y"]
-[ext_resource type="Texture2D" uid="uid://dg6xmv04hs18x" path="res://assets/levels/texture_sand.png" id="7_8ouhi"]
+[ext_resource type="Texture2D" uid="uid://l21csnx3l172" path="res://assets/levels/helloween_texture.png" id="7_8ouhi"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ouhi"]
-bg_color = Color(0.7746667, 0.04000001, 0.8, 0.8117647)
+bg_color = Color(0.011764706, 0.43137255, 1, 0.9098039)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.91, 0.28210002, 0.28210002, 1)
+border_color = Color(0, 0, 0.7529412, 1)
 border_blend = true
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8t4i"]
-bg_color = Color(0.55, 0.088000014, 0.31130013, 1)
+bg_color = Color(0.9019608, 0.05882353, 0.972549, 1)
 skew = Vector2(0.3, 0)
 border_width_left = 12
 border_width_top = 12
 border_width_right = 12
 border_width_bottom = 12
-border_color = Color(0.9666667, 0, 1, 0.40392157)
+border_color = Color(0.1254902, 1, 1, 0.62352943)
 border_blend = true
 corner_radius_top_left = 5
 corner_radius_top_right = 5
@@ -54,7 +54,7 @@ border_width_left = 8
 border_width_top = 8
 border_width_right = 8
 border_width_bottom = 8
-border_color = Color(0.89, 0.017799983, 0.78824323, 1)
+border_color = Color(0.29411766, 1, 0.7882353, 1)
 border_blend = true
 corner_radius_top_left = 3
 corner_radius_top_right = 3
@@ -62,13 +62,13 @@ corner_radius_bottom_right = 2
 corner_radius_bottom_left = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r70wa"]
-bg_color = Color(0.89, 0.017799983, 0.78824323, 1)
+bg_color = Color(0.9411765, 0.078431375, 1, 1)
 skew = Vector2(0.5, 0)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
 border_width_bottom = 6
-border_color = Color(0.3, 0.21100003, 0.033000007, 0.79607844)
+border_color = Color(0.29411766, 1, 0.7882353, 1)
 border_blend = true
 corner_radius_top_left = 4
 corner_radius_top_right = 4
@@ -86,12 +86,6 @@ skew = Vector2(0.5, 0)
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_cmwxi"]
 color = Color(0.19, 0.112100005, 0.0342, 1)
 thickness = 7
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ouhi"]
-texture = ExtResource("7_8ouhi")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5mqxt"]
-texture = ExtResource("6_8ouhi")
 
 [node name="MainMenu" type="Control" unique_id=655084936]
 layout_mode = 3
@@ -122,10 +116,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -138.0
-offset_top = -95.25
-offset_right = 138.0
-offset_bottom = 95.25
+offset_left = -158.46457
+offset_top = -109.375
+offset_right = 158.46457
+offset_bottom = 109.375
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -136,15 +130,16 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -190.0
-offset_top = -152.25
+offset_top = -33.125
 offset_right = 190.0
-offset_bottom = -66.25
+offset_bottom = 52.875
 grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0.88933337, 0, 0.92, 0.40392157)
+theme_override_colors/font_color = Color(0.9411765, 0.078431375, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.1254902, 1, 1, 0.62352943)
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 3
 theme_override_fonts/font = ExtResource("1_e8t4i")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -156,10 +151,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -152.8125
-offset_top = -132.0332
-offset_right = 152.8125
-offset_bottom = 132.0332
+offset_left = -104.0
+offset_top = -52.5
+offset_right = 110.11517
+offset_bottom = 132.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 7
@@ -437,19 +432,19 @@ offset_bottom = 143.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="LevelSand" type="Button" parent="LevelSelector/BoxContainer" unique_id=331566931]
+[node name="LevelMoon" type="Button" parent="LevelSelector/BoxContainer" unique_id=331566931]
 custom_minimum_size = Vector2(215, 120)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_8ouhi")
+theme_override_icons/icon = ExtResource("6_8ouhi")
 
-[node name="LevelBase" type="Button" parent="LevelSelector/BoxContainer" unique_id=1714769891]
+[node name="LevelHelloween" type="Button" parent="LevelSelector/BoxContainer" unique_id=1714769891]
 custom_minimum_size = Vector2(215, 120)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_5mqxt")
+theme_override_icons/icon = ExtResource("7_8ouhi")
 
 [connection signal="game_started" from="." to="." method="_on_game_started"]
 [connection signal="pressed" from="TitleScreenMain/Buttuns/StartButton" to="." method="_on_button_pressed"]
@@ -459,5 +454,5 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_5mqxt")
 [connection signal="toggled" from="Options/Panel/HSplitContainer/OptionControl/CheckButton" to="Options/Panel/HSplitContainer/OptionControl/CheckButton" method="_on_toggled"]
 [connection signal="item_selected" from="Options/Panel/HSplitContainer/OptionControl/ScaleControl" to="Options/Panel/HSplitContainer/OptionControl/ScaleControl" method="_on_item_selected"]
 [connection signal="pressed" from="Options/Panel/Back" to="." method="_on_back_pressed"]
-[connection signal="pressed" from="LevelSelector/BoxContainer/LevelSand" to="." method="_on_level_sand_pressed"]
-[connection signal="pressed" from="LevelSelector/BoxContainer/LevelBase" to="." method="_on_level_base_pressed"]
+[connection signal="pressed" from="LevelSelector/BoxContainer/LevelMoon" to="." method="_on_level_sand_pressed"]
+[connection signal="pressed" from="LevelSelector/BoxContainer/LevelHelloween" to="." method="_on_level_base_pressed"]

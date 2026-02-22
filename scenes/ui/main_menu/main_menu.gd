@@ -29,8 +29,8 @@ func _on_game_started():
 
 
 func _on_level_base_pressed():
-	get_tree().change_scene_to_file("res://scenes/levels/base_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/moon_level.tscn")
 
 
 func _on_level_sand_pressed():
-	get_tree().change_scene_to_file("res://scenes/levels/sand_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/helloween_level.tscn")

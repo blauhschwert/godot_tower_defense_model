@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpnct2twmj5sb"]
 
 [ext_resource type="Texture2D" uid="uid://dy8nqbnh3wm4p" path="res://assets/icons/attack.png" id="1_c88yd"]
-[ext_resource type="Texture2D" uid="uid://c1whj2nqeytyt" path="res://assets/Topdown Tanks/PNG/Bullets/bulletRed.png" id="2_xuw1v"]
+[ext_resource type="Texture2D" uid="uid://c1whj2nqeytyt" path="res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletRed.png" id="2_xuw1v"]
 [ext_resource type="Texture2D" uid="uid://qumapxgxtboj" path="res://assets/icons/firespeed.png" id="3_xuw1v"]
 
 [node name="Choices" type="Control" unique_id=1733754859]

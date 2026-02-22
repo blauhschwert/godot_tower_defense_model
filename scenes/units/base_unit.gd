@@ -1,44 +1,44 @@
 extends Node2D
 
 var ammo_type = [
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletBeige.png"),
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletBlue.png"),
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletGreen.png"),
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletRed.png"),
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletSilver.png"),
-	preload("res://assets/Topdown Tanks/PNG/Bullets/bulletYellow.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletBeige.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletBlue.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletGreen.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletRed.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletSilver.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Bullets/bulletYellow.png"),
 ] 
 
 var base_forms = [
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBeige.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlack.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlue.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankGreen.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankRed.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/base/base_light/tankBeige.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/base/base_light/tankBlack.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/base/base_light/tankBlue.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/base/base_light/tankGreen.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/base/base_light/tankRed.png"),
 ]
 
 var base_super_forms = [
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBeige.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlack.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlue.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankGreen.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/base/base_light/tankRed.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBeige.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlack.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/base/base_light/tankBlue.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/base/base_light/tankGreen.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/base/base_light/tankRed.png"),
 ]
 
 var barel_forms = [
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBeige.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBlack.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBlue.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_light/barrelGreen.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_light/barrelRed.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBeige.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBlack.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/barel/barel_light/barrelBlue.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/barel/barel_light/barrelGreen.png"),
+	preload("res://assets/kenny_assets//Topdown Tanks/PNG/Tanks/barel/barel_light/barrelRed.png"),
 ]
 
 var barel_super_forms = [
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBeige_outline.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBlack_outline.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBlue_outline.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelGreen_outline.png"),
-	preload("res://assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelRed_outline.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBeige_outline.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBlack_outline.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelBlue_outline.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelGreen_outline.png"),
+	preload("res://assets/kenny_assets/Topdown Tanks/PNG/Tanks/barel/barel_super/barrelRed_outline.png"),
 ]
 
 var can_shoot : bool = false
