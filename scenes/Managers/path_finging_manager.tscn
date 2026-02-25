@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dfu11lj8kmpru"]
+
+[ext_resource type="Script" uid="uid://c4yx8t1lqdtvq" path="res://scenes/Managers/path_finging_manager.gd" id="1_37ylr"]
+
+[node name="PathFingingManager" type="Node2D" unique_id=1019188146]
+script = ExtResource("1_37ylr")

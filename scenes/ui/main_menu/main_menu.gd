@@ -27,10 +27,8 @@ func _on_game_started():
 	$TitleScreenMain.hide()
 	$LevelSelector.show()
 
-
-func _on_level_base_pressed():
+func _on_level_moon_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/moon_level.tscn")
 
-
-func _on_level_sand_pressed():
+func _on_level_helloween_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/helloween_level.tscn")

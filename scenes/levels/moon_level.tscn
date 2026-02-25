@@ -1,6 +1,8 @@
 [gd_scene format=4 uid="uid://5xbi2y1wrupa"]
 
 [ext_resource type="Texture2D" uid="uid://ddqgk6ds005p0" path="res://assets/levels/Moon.png" id="1_0tsk1"]
+[ext_resource type="PackedScene" uid="uid://dfu11lj8kmpru" path="res://scenes/Managers/path_finging_manager.tscn" id="5_0tsk1"]
+[ext_resource type="PackedScene" uid="uid://b7ixfyeuhnaam" path="res://scenes/enemys/enemy/enemy_entitiy.tscn" id="6_05vlk"]
 [ext_resource type="PackedScene" uid="uid://c8qmravnspw6e" path="res://scenes/tower_place/tower_place.tscn" id="6_twq1y"]
 [ext_resource type="FontFile" uid="uid://cw22wrnae4r2q" path="res://assets/fonts/ARCADECLASSIC.TTF" id="8_y4py4"]
 [ext_resource type="PackedScene" uid="uid://rgkftqr1fph1" path="res://scenes/enemys/enemy_spawn.tscn" id="9_lry3i"]
@@ -92,4 +94,9 @@ theme_override_font_sizes/font_size = 32
 text = "WAVE"
 
 [node name="EnemySpawner" parent="." unique_id=731457114 instance=ExtResource("9_lry3i")]
+is_debug = false
 default_spawn_delay = 1.0
+
+[node name="PathFingingManager" parent="." unique_id=1019188146 node_paths=PackedStringArray("tile_map_grid") instance=ExtResource("5_0tsk1")]
+tile_map_grid = NodePath("../Ground")
+p = ExtResource("6_05vlk")

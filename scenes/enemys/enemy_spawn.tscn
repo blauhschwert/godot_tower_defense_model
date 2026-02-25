@@ -4,6 +4,7 @@
 
 [node name="EnemySpawner" type="Node2D" unique_id=731457114]
 script = ExtResource("1_wjbh4")
+is_debug = true
 default_spawn_delay = 5.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1442745226]

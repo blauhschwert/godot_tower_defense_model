@@ -92,7 +92,6 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -5.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qt1dd")
@@ -110,6 +109,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_8ouhi")
 
 [node name="TitleScreenMain" type="Control" parent="." unique_id=890919876]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -411,10 +411,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -396.5
-offset_top = -208.0
-offset_right = 396.5
-offset_bottom = 208.0
+offset_left = -399.0
+offset_top = -211.5
+offset_right = 394.0
+offset_bottom = 204.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -425,15 +425,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -312.0
-offset_top = -143.5
-offset_right = 312.0
-offset_bottom = 143.5
+offset_left = -396.5
+offset_top = -208.0
+offset_right = 911.5
+offset_bottom = 126.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="LevelMoon" type="Button" parent="LevelSelector/BoxContainer" unique_id=331566931]
-custom_minimum_size = Vector2(215, 120)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
@@ -454,5 +453,5 @@ theme_override_icons/icon = ExtResource("7_8ouhi")
 [connection signal="toggled" from="Options/Panel/HSplitContainer/OptionControl/CheckButton" to="Options/Panel/HSplitContainer/OptionControl/CheckButton" method="_on_toggled"]
 [connection signal="item_selected" from="Options/Panel/HSplitContainer/OptionControl/ScaleControl" to="Options/Panel/HSplitContainer/OptionControl/ScaleControl" method="_on_item_selected"]
 [connection signal="pressed" from="Options/Panel/Back" to="." method="_on_back_pressed"]
-[connection signal="pressed" from="LevelSelector/BoxContainer/LevelMoon" to="." method="_on_level_sand_pressed"]
-[connection signal="pressed" from="LevelSelector/BoxContainer/LevelHelloween" to="." method="_on_level_base_pressed"]
+[connection signal="pressed" from="LevelSelector/BoxContainer/LevelMoon" to="." method="_on_level_moon_pressed"]
+[connection signal="pressed" from="LevelSelector/BoxContainer/LevelHelloween" to="." method="_on_level_helloween_pressed"]
