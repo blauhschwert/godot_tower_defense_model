@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://doeiol0xh2yl8"]
+
+[ext_resource type="Script" uid="uid://db5yp37mf8u34" path="res://scenes/enemys/hurtbox/hurt_box.gd" id="1_hg4py"]
+
+[node name="HurtBox" type="Area2D" unique_id=1211731276]
+script = ExtResource("1_hg4py")

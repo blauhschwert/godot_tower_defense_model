@@ -1,3 +1,4 @@
+class_name BaseUnit
 extends Node2D
 
 var ammo_type = [
@@ -93,5 +94,6 @@ func _on_shooting_timeout():
 	if can_shoot:
 		shoot()
 
-func _on_shooting_range_body_entered(_body):
-	pass # Replace with function body.
+func _on_shooting_range_area_entered(area: Area2D) -> void:
+	if area is HurtBox:
+		area.take_damage(3)

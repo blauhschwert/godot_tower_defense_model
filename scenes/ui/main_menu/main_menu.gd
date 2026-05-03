@@ -22,12 +22,10 @@ func _on_exit_button_pressed():
 func _on_game_started():
 	$TitleScreenMain.hide()
 	$LevelSelector.show()
-
-func _on_level_moon_pressed():
-	get_tree().change_scene_to_file("res://scenes/levels/moon_level.tscn")
-
-func _on_level_helloween_pressed():
-	get_tree().change_scene_to_file("res://scenes/levels/helloween_level.tscn")
-
+	
 func _on_options_close_options() -> void:
 	$TitleScreenMain.show()
+
+
+func _on_level_base_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/levels/base_level.tscn")

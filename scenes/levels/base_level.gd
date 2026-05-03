@@ -1,7 +1,7 @@
 class_name BaseLevel
 extends Node2D
 
-const ENEMY_SCENE = preload("res://scenes/enemys/enemy/enemy_entitiy.tscn")
+const ENEMY_SCENE = preload("res://scenes/enemys/base_enemys/base_enemy_entitiy.tscn")
 
 @onready var enemy_path: Path2D = $EnemyPath
 

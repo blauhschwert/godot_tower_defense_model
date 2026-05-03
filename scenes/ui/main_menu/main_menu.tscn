@@ -43,6 +43,14 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 4
 
+[sub_resource type="Gradient" id="Gradient_qt1dd"]
+offsets = PackedFloat32Array(0, 0.56981134, 1)
+colors = PackedColorArray(0.4627451, 0.8745098, 0, 1, 0.1285344, 0.5683078, 0.109041505, 1, 0.119466655, 0.56, 0.111999996, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cmwxi"]
+gradient = SubResource("Gradient_qt1dd")
+width = 124
+
 [node name="MainMenu" type="Control" unique_id=655084936]
 layout_mode = 3
 anchors_preset = 15
@@ -66,6 +74,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_8ouhi")
 
 [node name="TitleScreenMain" type="Control" parent="." unique_id=890919876]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -166,7 +175,6 @@ visible = false
 layout_mode = 1
 
 [node name="LevelSelector" type="Control" parent="." unique_id=998367923]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -182,8 +190,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="LevelBase" type="TextureButton" parent="LevelSelector/BoxContainer" unique_id=303583575]
+custom_minimum_size = Vector2(52.83, 40)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = SubResource("GradientTexture1D_cmwxi")
+stretch_mode = 1
+
 [connection signal="game_started" from="." to="." method="_on_game_started"]
 [connection signal="pressed" from="TitleScreenMain/Buttuns/StartButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TitleScreenMain/Buttuns/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="TitleScreenMain/Buttuns/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="close_options" from="Options" to="." method="_on_options_close_options"]
+[connection signal="pressed" from="LevelSelector/BoxContainer/LevelBase" to="." method="_on_level_base_pressed"]

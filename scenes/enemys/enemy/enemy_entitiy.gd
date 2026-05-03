@@ -1,7 +1,7 @@
-class_name EnemyEntity
+class_name BaseEnemyEntity
 extends PathFollow2D
 
-@export var speed : float = 250
+@export var speed : float = 55
 
 func _ready() -> void:
 	pass

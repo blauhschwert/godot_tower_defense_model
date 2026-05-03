@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cug54a3e4ai61"]
+
+[ext_resource type="Script" uid="uid://bbw3nuhxabk03" path="res://scenes/enemys/base_enemys/base_enemy_entitiy.gd" id="1_1xeqm"]
+[ext_resource type="Texture2D" uid="uid://5m5bravx11uj" path="res://assets/enemy/enemy_assets/elementals/stone elemental/sprite_sheet_stone_elemental_0_16x16.png" id="2_tfnhb"]
+[ext_resource type="PackedScene" uid="uid://doeiol0xh2yl8" path="res://scenes/enemys/hurtbox/hurt_box.tscn" id="3_1xeqm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xeqm"]
+atlas = ExtResource("2_tfnhb")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lon8w"]
+atlas = ExtResource("2_tfnhb")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etjyp"]
+atlas = ExtResource("2_tfnhb")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00ptc"]
+atlas = ExtResource("2_tfnhb")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u4k8n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xeqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lon8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etjyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00ptc")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1xeqm"]
+
+[node name="BaseEnemyEntitiy" type="PathFollow2D" unique_id=1661097144]
+rotates = false
+script = ExtResource("1_1xeqm")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1449302672]
+sprite_frames = SubResource("SpriteFrames_u4k8n")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.9253185
+
+[node name="HurtBox" parent="." unique_id=1211731276 instance=ExtResource("3_1xeqm")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=278734754]
+shape = SubResource("CircleShape2D_1xeqm")
+
+[connection signal="reduce_health" from="HurtBox" to="." method="_on_hurt_box_reduce_health"]

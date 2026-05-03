@@ -11,9 +11,8 @@ height = 16.0
 rotates = false
 script = ExtResource("1_7b6al")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=756416141]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1971518315]
 texture = ExtResource("1_q6f3i")
-hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1536907001]
 shape = SubResource("CapsuleShape2D_d3k48")

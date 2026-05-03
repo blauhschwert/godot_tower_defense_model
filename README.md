@@ -78,6 +78,8 @@ This project may use external assets for visuals, audio, or fonts. All rights be
 
 - Heroic Asset Series [Creature Pack (v.1.4)] https://iknowkingrabbit.itch.io/heroic-creature-pack
 
+- Kenny Assets https://kenney.itch.io/kenney-game-assets
+
 
 ## 📜 License
 
