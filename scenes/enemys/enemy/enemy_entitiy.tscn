@@ -7,7 +7,8 @@
 radius = 5.0
 height = 16.0
 
-[node name="EnemyEntitiy" type="CharacterBody2D" unique_id=1208962062]
+[node name="EnemyEntitiy" type="PathFollow2D" unique_id=1661097144]
+rotates = false
 script = ExtResource("1_7b6al")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=756416141]

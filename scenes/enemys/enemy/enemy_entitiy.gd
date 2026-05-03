@@ -1,26 +1,12 @@
 class_name EnemyEntity
-extends CharacterBody2D
+extends PathFollow2D
 
-@export var movement_speed : float = 200
-@export var pathfindig_mangager : PathFindingManager = null
-@export var target_pos : Marker2D = null
-
-var path_array : Array[Vector2i] = []
+@export var speed : float = 250
 
 func _ready() -> void:
-	path_array = pathfindig_mangager.get_valid_path(global_position / 32, target_pos.position / 32)
-
-func _process(delta : float) -> void:
-	get_path_to_position()
-	move_and_slide()
-
-func get_path_to_position() -> void:
-	if len(path_array) > 0:
-		var direction : Vector2 = global_position.direction_to(path_array[0])
-		
-		velocity = direction * movement_speed
-		
-		if global_position.distance_to(path_array[0]) <= 10:
-			path_array.remove_at(0)
-	else:
-		velocity = Vector2.ZERO
+	pass
+	
+func _process(_delta : float) -> void:
+	progress += _delta * speed
+	if progress_ratio >= 1.0:
+		queue_free()

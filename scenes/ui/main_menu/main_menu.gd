@@ -19,10 +19,6 @@ func _on_options_button_pressed():
 func _on_exit_button_pressed():
 	get_tree().quit()
 
-func _on_back_pressed():
-	$Options.hide()
-	$TitleScreenMain.show()
-
 func _on_game_started():
 	$TitleScreenMain.hide()
 	$LevelSelector.show()
@@ -32,3 +28,6 @@ func _on_level_moon_pressed():
 
 func _on_level_helloween_pressed():
 	get_tree().change_scene_to_file("res://scenes/levels/helloween_level.tscn")
+
+func _on_options_close_options() -> void:
+	$TitleScreenMain.show()
